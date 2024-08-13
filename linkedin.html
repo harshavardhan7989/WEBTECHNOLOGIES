@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+</head>
+<style>
+    h1{
+        color: rgb(68, 151, 219);
+        background-color: rgb(173, 178, 183);
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        font-size: large;
+    }
+    label{
+        font-style: normal;
+    }
+    fieldset{
+        width: fit-content;
+        margin-left: 36%;
+        margin-top: 2%;
+    }
+    img{
+        height: 100px;
+        width: 240px;
+    }
+</style>
+<body>
+    <img src="OIP.jpeg" alt="Linkedin Logo">
+    <h1>Linkedin</h1>
+    <fieldset>
+        <h2>REGISTRATION FORM</h2>
+        <form>
+            <label for="fname">Name:</label>
+            <input type="text" name="fname" id="fname">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="pswd">Password:</label>
+            <input type="text" name="pswd" id="pswd">
+            <br><br>
+            <label for="Phn">Mobile No:</label>
+            <input type="number" name="Phn" id="Phn">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="Male" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" value="Female" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" value="Other" id="Other">
+            <label for="Other">Other</label>
+            <br><br>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+            <br><br>
+            <label for="profession">I'm a:</label>
+            <select name="profession" id="profession">
+                <option value="student">student</option>
+                <option value="teacher">teacher</option>
+                <option value="fresher">fresher</option>
+                <option value="freelancer">freelancer</option>
+            </select>
+            <br><br>
+            <label for="exp">Experience:</label>
+            <select name="exp" id="exp">
+                <option value="0">0-1years</option>
+                <option value="1">1-5years</option>
+                <option value="2">5+years</option>
+            </select>
+            <br><br>
+            <label for="resume">Add yours Resume:</label>
+            <input type="file" name="resume" id="resume">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" Value="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-size: large;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            background-color: rgb(234, 106, 43);
+        }
+        img{
+            height: 70px;
+            width: 140px;
+        }
+        legend{
+            color: rgb(113, 184, 242);
+        }
+        fieldset{
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <img src="MBU_Final_Logo.png" alt="Mbu logo">
+    <h1>Student Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>PERSONAL DETAILS:</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>EDUCATIONAL DETAILS:</legend>
+            <label for="12thp">12th Percentage:</label>
+            <input type="number" name="12thp" id="12thp" required>
+            <label for="12thc">Name of Institution:</label>
+            <input type="text" name="12thc" id="12thc" required>
+            <label for="psd">Passed Out Year:</label>
+            <input type="month" name="psd" id="psd" required><br><br>
+            <label for="10thp">10th Percentage:</label>
+            <input type="number" name="10thp" id="10thp" required>
+            <label for="10thc">Name of Institution:</label>
+            <input type="text" name="10thc" id="10thc" required>
+            <label for="psd">Passed Out Year:</label>
+            <input type="month" name="psd" id="psd" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>DOCUMENTS:</legend>
+            <label for="10mrk">10th Marks Memo:</label>
+            <input type="file" name="10mrk" id="10mrk" required>
+            <br>
+            <label for="12mrk">12th Marks Memo:</label>
+            <input type="file" name="12mrk" id="12mrk" required>
+            <br>
+            <label for="ph">Photo:</label>
+            <input type="file" name="ph" id="ph" required>
+            <br>
+            <label for="ic">Income Certificate:</label>
+            <input type="file" name="ic" id="ic" required>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="REGISTER">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
